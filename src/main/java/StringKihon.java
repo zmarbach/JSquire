@@ -1,12 +1,12 @@
+import framework.StringKihonBase;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import framework.StringKihonBase;
 
 public class StringKihon extends StringKihonBase {
 
     @Override
-    protected String convertToUpperCase(String data) {
-        return data.toUpperCase();
+    protected String convertToUpperCase(String data) {return data.toUpperCase();
     }
 
     @Override
@@ -16,61 +16,57 @@ public class StringKihon extends StringKihonBase {
 
     @Override
     protected String combinePartsOfAName(String firstName, String middleName, String lastName) {
-        throw new UnsupportedOperationException();
+        return firstName + " " + middleName + " " + lastName;
     }
 
     @Override
     protected String combineTwoStrings(String a, String b) {
-        throw new UnsupportedOperationException();
+        return a + b;
     }
 
     @Override
     protected int determineTheLengthOfAString(String data) {
-        throw new UnsupportedOperationException();
+        return data.length();
     }
 
     @Override
     protected String removeAllLeadingWhitespace(String data) {
-        throw new UnsupportedOperationException();
+        return data.stripLeading();
     }
 
     @Override
     protected String removeAllTrailingWhitespace(String data) {
-        throw new UnsupportedOperationException();
+        return data.stripTrailing();
     }
 
     @Override
     protected String[] splitAStringIntoAnArray(String input, char divider) {
-        throw new UnsupportedOperationException();
+        return input.split(String.valueOf(divider));
     }
 
     @Override
     protected String joinAnArrayIntoAString(String[] input, String divider) {
-        throw new UnsupportedOperationException();
+        return String.join(divider, input);
     }
 
     @Override
     protected boolean returnTrueIfAContainsB(String a, String b) {
-        throw new UnsupportedOperationException();
+        return a.contains(b);
     }
 
     @Override
-    protected int determineThePositionOfAInB(String a, String b) {
-        throw new UnsupportedOperationException();
+    protected int determineThePositionOfAInB(String a, String b) {return b.indexOf(a);
     }
 
     @Override
-    protected boolean returnTrueIfAStartsWithB(String a, String b) {
-        throw new UnsupportedOperationException();
+    protected boolean returnTrueIfAStartsWithB(String a, String b) {return a.startsWith(b);
     }
 
     @Override
-    protected boolean returnTrueIsAEndsWithB(String a, String b) {
-        throw new UnsupportedOperationException();
+    protected boolean returnTrueIsAEndsWithB(String a, String b) {return a.endsWith(b);
     }
 
     @Override
-    protected String returnTheFourthThroughSeventhCharactersOfInput(String input) {
-        throw new UnsupportedOperationException();
+    protected String returnTheFourthThroughSeventhCharactersOfInput(String input) { return input.substring(4,7);
     }
 }
