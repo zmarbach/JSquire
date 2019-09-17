@@ -6,17 +6,18 @@ public class StringKihon extends StringKihonBase {
 
     @Override
     protected String convertToUpperCase(String data) {
-        throw new UnsupportedOperationException();
+        return data.toUpperCase();
     }
 
     @Override
     protected String convertToLowerCase(String data) {
-        throw new UnsupportedOperationException();
+        return data.toLowerCase();
+
     }
 
     @Override
     protected String combinePartsOfAName(String firstName, String middleName, String lastName) {
-        throw new UnsupportedOperationException();
+        return firstName + " " + middleName + " " + lastName;
     }
 
     @Override
