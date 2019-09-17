@@ -6,12 +6,12 @@ public class StringKihon extends StringKihonBase {
 
     @Override
     protected String convertToUpperCase(String data) {
-        throw new UnsupportedOperationException();
+        return data.toUpperCase();
     }
 
     @Override
     protected String convertToLowerCase(String data) {
-        throw new UnsupportedOperationException();
+        return data.toLowerCase();
     }
 
     @Override
