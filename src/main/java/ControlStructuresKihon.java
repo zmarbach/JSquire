@@ -40,8 +40,6 @@ public class ControlStructuresKihon extends ControlStructuresKihonBase {
         do {
             a.hit();
         }
-        while (false); {
-            a.getIsValid()
+        while (a.getIsValid());
         }
     }
-}
