@@ -8,11 +8,10 @@ public class ControlStructuresKihon extends ControlStructuresKihonBase {
     protected void callHitOnAIfValIsTrueElseCallHitOnB(boolean val, Target a, Target b) {
         throw new UnsupportedOperationException();
     }
-
     @Override
-    protected void callHitOnAOnceForEachMemberOfList(Target a, Collection<String> list) {
-        throw new UnsupportedOperationException();
-    }
+    protected void callHitOnAOnceForEachMemberOfList(Target a, Collection<String> list){
+            throw new UnsupportedOperationException();
+        }
 
     @Override
     protected void callHitOnAWhileAIsValidIsTrue(Target a) {
