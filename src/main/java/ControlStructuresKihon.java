@@ -30,9 +30,9 @@ public class ControlStructuresKihon extends ControlStructuresKihonBase {
     protected void nTimesCallHitOnA(int n, Target a) {
         for (int i = 0; i < n; i = i + 1) {
             a.hit();
+            }
         }
-    }
-    @Override
+        @Override
     protected void callHitOnAOnceAndLoopUntilIsValidIsFalse(Target a) {
         do {
             a.hit();
