@@ -41,23 +41,22 @@ public class StringKihon extends StringKihonBase {
 
     @Override
     protected String[] splitAStringIntoAnArray(String input, char divider) {
-        throw new UnsupportedOperationException();
+    return input.split(String.valueOf(divider));
     }
 
     @Override
     protected String joinAnArrayIntoAString(String[] input, String divider) {
-        throw new UnsupportedOperationException();
+    return String.join(divider, input);
     }
 
     @Override
     protected boolean returnTrueIfAContainsB(String a, String b) {
-        throw new UnsupportedOperationException();
-    }
+    return a.contains(b);    }
 
     @Override
     protected int determineThePositionOfAInB(String a, String b) {
-        throw new UnsupportedOperationException();
-    }
+    return b.indexOf(a);
+        }
 
     @Override
     protected boolean returnTrueIfAStartsWithB(String a, String b) {
@@ -71,6 +70,6 @@ public class StringKihon extends StringKihonBase {
 
     @Override
     protected String returnTheFourthThroughSeventhCharactersOfInput(String input) {
-        throw new UnsupportedOperationException();
-    }
+    return input.substring(4,7);
+        }
 }

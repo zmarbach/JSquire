@@ -8,12 +8,12 @@ public class NumbersKihon extends NumbersKihonBase {
 
     @Override
     protected int returnTheMinimumValueOfInt() {
-        throw new UnsupportedOperationException();
+        ;
     }
 
     @Override
     protected int returnTheRemainderOfADividedByB(int a, int b) {
-        throw new UnsupportedOperationException();
+    return a % b;
     }
 
     @Override
@@ -28,11 +28,11 @@ public class NumbersKihon extends NumbersKihonBase {
 
     @Override
     protected boolean returnTrueIfAIsNotANumber(double a) {
-        throw new UnsupportedOperationException();
+    return Double.isNaN(a);
     }
 
     @Override
     protected boolean returnTrueIfAIsAnInfinite(double a) {
-        throw new UnsupportedOperationException();
+    return Double.isInfinite(a);
     }
 }
