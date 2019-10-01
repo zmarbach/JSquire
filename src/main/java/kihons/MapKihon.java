@@ -3,9 +3,7 @@ package kihons;
 import framework.bases.MapKihonBase;
 import framework.exceptions.NotImplementedYetException;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class MapKihon extends MapKihonBase {
 
@@ -36,7 +34,13 @@ public class MapKihon extends MapKihonBase {
 
     @Override
     protected int countUniqueWordsInList(List<String> inputWords) {
-        return (int)inputWords.stream().distinct().count();
+        //return (int)inputWords.stream().distinct().count();
+
+        Set<String> count = new HashSet<>();
+        for (String word: inputWords) {
+            count.add(word);
+        }
+        return count.size();
     }
 
 }
